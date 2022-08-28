@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <style>
+
+    :target {
+      top: -110px; 
+    }
+    
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark navbar-expand-md bg-dark  mb-3 fixed-top">
+    <div class="container-fluid m-auto">
+      <a class="navbar-brand m-auto"  href="#">
+        <img src="https://placekitten.com/50/50" alt="" class="rounded-circle">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BODY -->
+  <div class="mt-4 p-5 d-md-flex align-items-center justify-content-between" id="home" >
+    <div class="container-fluid  w-md-25 d-flex justify-content-center" >
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8QDw8QDw8PDxAPDw8PDw0PDw8PDQ8PFhYXFxYWFhYZHikhGRsmHBYWIjIiJiosLy8vGCA1OjUtOSkuLywBCgoKDg0OHBAQHC4nISY3Li4uMS8wLjc0MS4uLi4uLi4uLjAuLi4xLi4uLi4uLi4wLi83Li4uLi4uNC4uLi4uLv/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAQIDBQYHBAj/xAA9EAACAQMABggCCQMDBQAAAAAAAQIDBBEFEiExQWEGEyJRcXKBsRQyByNCUlOCkaHBQ2LhJDPwc5Ki0fH/xAAaAQEAAwEBAQAAAAAAAAAAAAAABAUGAwIB/8QANxEAAQMCAwQHBgUFAAAAAAAAAAECAwQRBSExUWGB0RIiQZGhwfAjMkJxgrEGExTC4TNDUnLx/9oADAMBAAIRAxEAPwDs4YGABEBtEQCQCAAYAAADAAAAQADBAAAxAh4AEAxAAIYAAAAAIYAAAAIAYAAAAIACWBMk0JgCE0MACAwaEAMBDAGMiNADEMABADAAY0xN4WXsS2tvckJMAmIcWGAAE0MYBACTRFoAAAAAAATAARJoQAgGABa0RaLd5BoArYmTaItACISRMQBEAkhIAkMiPIAxgYHS3Sq3oZjB9bU+5F4SfN7v0yemMc9bNS5ymnjhb05HIib/AC28DOmv6Y6V0KOY0/r5/di+ynzf/o03S2n7i5ypz1YfhR7K9e8xJPiok1evAz1Xjrl6sCW3rrwTnf5GU0vp24ucqc8Q2YpR7MfVcTqVD5I+WPscYf8AKOz0Pkj5Y+x8rWo1Gom/yOmBSOkfK56qq9XX6iZOLKxleaIngRJPIYAGtpFoCa2gFTREtcSDQAgAQBKLG0QLIPOwAjgCzVAAhCePAuPOThPHgASaItFrINAFeBEmhMARXJFhhdLdJbahmOt1lT8OG5PnLcj01jnLZqXOcs0cTelIqIm/1nwMsmYXSvSe2oZjnrakf6cHx5vcv3NN0t0juLjK1urp/hxeE1ze8wxPioe2TuTmZ6rx1fdp04r5Jz7jMaW6Q3FxlOepT/CjlfrxMOAE5rUalmpkUEkr5XdJ6qq7wAG0tr2Li2Y+WkteapW1OdxVlsjGnFyh+28+ucjUuojidItmpc97f8HZaaxGPlj7HNej30f3VSpTr6Qq9UoThUha0nF7YvK1n8q3cMvmjp7KqrmSRUROw1mEUL6Zrlfq62XyvzEmMhuJoiFwNMti8lQ0wCbQtxNPImgB7yEojWwnvAKGhFkkQYBEBgAPXfewEAA2hEmhYAJU58GWtHnMXpTpJb22YylrzX9OPzPxe49Na5y2alznLKyJvSkVETeZnBg9LdJba3ynLXqL+nDenze5Gm6X6V3NxmMfqab+xF5k1ze9/sa+ToqLtk7k5lBVY78MCcV8k59xnNMdJ7i4zHPVU39iLayuct5gwAnta1qWaljPSyvld05Fuu8AA8N1pWEWoQTq1G8KENuZcFs48kfVVES6nljHPWzUue48FXSsdZU6MZV6sniMaacot9ya3+hnNE9BL28xO8n8JRe3qEs1ZLnHcvzbeR0TQfR60so6ttRjBtYlVfarT8Zvb6buRClrETJpe0mCPd1pVsmw0DQ/0f3l01PSFT4elv8AhqbTqNc/sx9cvkjomhtB2tnDUtqMKefmklmpPzTe1mQk+L2Y2tmMt9MRb7SwvszW1NcGVFVXMYqfnOt0r2vplv0TiaaloWsb7JuneZXIyFOaksxaafFPKJHS99D2DRFPBIGgCSAhF95MAaeC5PJSOLwAWOJFPBNMTQA2slUkTTwOSAKAJSREAAAACwWCunPHgXNAFc3hN9yb/RHFnXdTFSSSlUSqSS3JyWXjltO01l2JeWXscRtP9ul/0qfsiwoNXcDPfiD3Y0/28iwAK61xGO97e5byxMyiKuSFh4rzStOm9VfWTbwoQ7Tz3Hnu67qLVblCL36j7WP5OjdAKGiIJfCr/U47UrjDr89V/Ljy+pGmnViXRCzoaBszrPdbdt5/I1nQ/QnSF9iVy/grd7dTVfXzXk3r82PBnRuj3RezsI/6ektfGJV54nXl+bguSwjNJjcSrfK565mrp6SKBLMQraIk2iLRzJJXcfJPyS9mahb/AO3DyR9kbbcfJPyS9malb/JDyR9kZv8AEOsf1ftLPDvi4eZ6KFecHmEmvZ+hl7XTEXsqLVffvX6cDCAU1LXz039Ncti5p3cuNyZLTsl95M9pt0JppNNNPc1tRI1S3uJ03mEmu9b0/QzFrpiL2VFqvvW1f4NLS41BLlJ1Xb9O/nbdcrJaJ7M25p49xk2gg+AoyTSaaae5ramNouCGWCFCRIAcZYLCpocZYALGiKeCQNAEJxKmXplc4gFYDAAqTLqVTGx7vYqaAAvrrsS8svY4DZaVpOnBZakoxWo9jbS4HfaU+D3Gk9Jvozs7nM7bFpVfCEc28nzh9n8uPBkinm/LVd5W4lRfqmtt2X8TnFa8k93ZX7nlLtM6A0ho5/X0nKlnCrRbnRf5vs+EkjyULmM9zw/uvf8A5J6SI/O5QPpnQ5KhaCeNq2NbnxTAD3Y5G2aC6dXVviNb/U0ti1ZP62K5S4+uTo2gukdteJKlUxPjSliNRenFc0cNHCTTTTaaeU08NPxI8lO12mRPp8RliyXrJv5699z6IlEg0cs0D9IFzRxC4XxEFs1m9WrFeP2vX9Toeh9O213HNCom8ZdOXZqR8V/K2EKSFzNS9p6yKfJq57F1/ngeq5WYT8svY57o/TNOSVOpmlOKUWp7FlbN/B8mdHaMVpfQFtdL62GJ8KsOzNevHweSoxKg/Vo2y2VL+NuRaU1QkSrdMlMGmBj7rQV9Z5dB/E0Vt1MZkl5N/wD2/oQsdNUqmyT6ue7VluzyZkqijmgdZ6FvHI16XapkwACKdC+3uZ03mEsd63pmXtNLxlhVFqP72+H+DAgTqXEJ6b3Fy2Lp/HCxwlp45NUz2m3p52p57mtxbCWfE1G2up0/klhcVvTMzaaWhLCn2Jf+D9eBpaTGIJuq7qu36cF523XK2WjkZm3NPHuMuRwOnNNf8wyTRbEMUJEytolFgDaESE0AQ1PECQAHmFgGMASZfSqcGUMaAPRUgmmmk01hppNNdzRoPSX6MbS41p2r+Fqvbqpa1tJ+TfD8uzkb7SqZ2PeOSPqOVNDw9jXpZyHzxpnQt/o94uaTdPOI1ovXoy8J8HyeGeejcxnueH917GfRValGcXGcYyjJYlGSUoyXc095ofSP6MbWtmdpL4Wpv6vDlbyfhvh6bORLZU/5FVUYWi5x+vL7HNgJaX0Ve6Plq3VJ6reI1V24T8s1x5PaU0biM9z2/dexktr0doU8sL41s5CwnSqSjJSjJxknlSi2pJ8miAHs4m76C+kKvTxC6j18N3WrCqJe0v28ToGitMW11HWoVYzwtsN04+MXtRwgst604SU6cpQnHapwbjJeqI0lM12aZFlT4nLHk7rJv17zv7RidMdHra6y5w1an41PEZ+vCXqaZoL6QqkMQvI9bH8aCSmvMt0v2OkJ5Sa3NJ+jIE0FurIl0L6lq2S9aJc070Of3WiL+y2x/wBTQj3JuUY8474+mUSsdMUquFnUm/sS4+D4m/pmG010YtrrMnHq6r/qwSTb/uW6XvzM/VYIx+cS2XYvPn3lvDXWyk7/AODEgYu7sb6x2yXxNBfaWXqrnxj+6LrDStKtsT1Zfclsfp3mdnpZYHWelixZI16Xap7gACMey+1vKlJ9iWF3PamZ2z0zTnhS+rlz+R+vD1NbAn0mIz02TVu3YuacO1PWRwlpo5NUz2m7/wDMkWjU7S/qUvlls+5vT9OHobbF5SfekzVUGIMq0WyWVLXT57F4bipnp1hVLrdFHFkiDRKLLAjjAAAPLvIjQ2sgEQEMAeT0QnnxPMNMAvaIMnGWfEiwCqvRhOMoTjGcJLEoTipRkuae80LpF9GFvVzOzn8NU39VLM7dvl9qHplcjoLIs9NcrdDw+Nr0s5D570po28sZ6l1RlFZxGp8yn5ZrY/DeV0biM9z2/dexn0JcUIVIyhUhGpCSxKE4qUJLmnsZoPSL6MKFTNSxn8PU3qjNynQb5PbKH7rkiVHVdjipqMLRc4/Xl9jnoEdJWV5ZT1LujOPCMnh63lmtkvcjRrxn8r9NzRLa5F0KeSF8a2chNn0HQ+SHkj7I+fGfQdD5IeSPsiNWfDx8i2wbV/0+Y2hpgLBBLsk0a9pronbXGZJdTV39ZBLVk/7o7n4rDNhizw6R0pRopqcsy4U47Zevd6nGf8roL+bbo7zpF0+l7O99xo9zQvrH/dj8RRX9VZeFze+PqeyyvoVYpxys/ZksP/PoW3+natXKi+rg9jjF9p+LMUYmtdTK/wBhe2/1fvL6FsnR9pa+7zMyBjaN3KO/tLnv/U9tK4jLc9vc95DOioqFxutF9mPgvY0o2+jLCXgvY0X4e96X6fu4rMR0bx8j0NEWTTyJo0xWEdZgGAAPONEUMAckQLCMkAIEIYBJPBankpHF4AJsRLJFgCYiQsAFV1b06sHTqwhUhLZKE4qcH4pnPukn0XUp5qWE+pntfUVHJ0m/7Z7ZQ/deB0QEemvVuhzkiZIlnIfPt1YXltWhQuaMoTqSUKblhRm28LVmuzJbUfQlOOIxT3qMU/FIqr0IVI6tSEZxypas4qS1k8p4fFMhe6QpUVmpNJ8Etsn4I+zTorbvVERDlS0aROVGZ3t68T0Hkv8ASVGiu3LtcILbJ+nD1Nd0h0jqzzGkuqj97fUa8eHp+phG23lvLe9va2Z2rx1rOrAl966cE1Xw4l3DhyrnIttyesjL6Q6QVamYw+qj/a+2/GXD0MQyIGcnqJJ3dKRbr60TROBaRxNjSzUsAARqVIxWZNJczih0JEatWMFmTSXMVlSuLp4taTcc4defZpx9f/r5GzaL6H0YPXuJO5qd0limvy8fX9CypMKnnztZNqkWarjjy1UweiZ3VzJKhTbpKS1q9TZFRztSfF48TomCEYpJJJJJYSSSSXckSNTRUMdK1Ubquq/L14lNUVCzLdUJQnjwL0eYnTnjwJpwLgFld4AHkGEkIAkhkSQBGUSKLCEogAMihgEkyZWNMAkIYgBNHlu7ynRWaklHuW+T8FxPVOWE33JvHgc6q13Uk5vOZrW2vLSe3GStxKvWkanRS6rfXst2+O4l0lMkyrdckM3pDpJOWY0V1cfvvDqP+EYOcm22223vbeW/UgMyNRVS1DulKt/snyQu44WRpZiCAAnNRWW0l3vYRjoAqlSMVmTSXeyu1Ve4lq2tKVTGx1ZdmnHxb/5yNm0V0Mppqpdz+In+GsqlF+8v2XIsqTC5qjNEsm1SNNVRxarma1aQuLl6trSclnDrSWrSj6vZ/PI2nQ/QyjFqd1J3FTfqvZRj6fa9dnI2OnTjFKMYqMVsUYpKKXJIkjS0uFwQZ2uu1eRVTVskmSZISVFRSUUopLCiklFLuSIYL4Sz4kZwLIhlSAAAGAAAAAABOSKmj0SRXJAFYxNAgCQCGAQkhIsISWAAGJDAGmMihgELj5J+SXsznFH5Y+WPsdIufkn5JezOa05JQi20lqx2vYtxm/xD/b+r9pa4Z8fDzJhKSSy2ku97EVW86teXV2tKVWXGW6nHm2/5Nh0d0MTxO8qOrLf1MG40l4ve/THqVVLhs9RmiWTapMmqo4tdTXrZ1riWpa0pVGtjqPZTj4tmx6L6Gxyp3lR1prb1UW1SXJ8ZfsbPQowhFQhGMIx2KMUoxXoiw01LhUMGa5rv5FVNWyPyTJCNKlGEVGEYwjFYUYpRilySJgBZkMAAAATLovKKRp4AJSiVl2corkgCIxDAABAAWQljwJSRWSjIAjJESxkWgBAAADEAAEGsATINYAGMSGARqxzGS74tfqjUtF9Cs6sr2q6jSWKMG1TXjLe/TBt4zjLTxyqivS9tOP8Aw6MlexFRq2uV21tCnFQpwjCC3RikkWAB2OYmgQxMAYCGAADEAADAAE8E3tIAmADQiTIsAYEcgASAAAGmDIjTAEwGxAAAAAAMAAI4BEmiIAxkRoAYAAAAAAAAAAMQxADEAADEAADBgIAMAAACAAAGAAANiQAAAAAAAAADIsAABAAADAAAAAAAQwAAAAABiAABgAAAAAAAAAB//9k=" class="img-fluid" alt="makassar-coding">
+    </div>
+    <div class="container-fluid w-md-75 mt-2">
+      <h1 class="text-muted">TETS</h1>
+      <p class="text-md-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem autem quaerat mollitia voluptatem quis vel assumenda, accusantium consectetur, recusandae praesentium odit error quas aperiam! Repellendus perspiciatis labore itaque nostrum facere.</p>
+
+      <p class="text-md-start ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem autem quaerat mollitia voluptatem quis vel assumenda, accusantium consectetur, recusandae praesentium odit error quas aperiam! Repellendus perspiciatis labore itaque nostrum facere.</p>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-4">
+    <p class="h1" id="features">FEATURES</p>
+    <p class="text-start">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quaerat possimus reiciendis molestiae nihil nostrum necessitatibus nisi consectetur totam dignissimos nam voluptatum, sit aperiam fugit dolore iste architecto tempore. Fugiat.
+    Reiciendis, cum doloremque eaque, sequi debitis voluptate nihil suscipit quia dolore commodi quisquam dignissimos deserunt repellat tempore nostrum culpa voluptates eius laudantium dolorem ullam. Quos reprehenderit dolorum aut officia quam.
+    Hic, illo rem nam iure consequatur, dolorem quae magnam, quo sunt ex sequi animi quod reiciendis. Expedita impedit fuga debitis, cumque minus quia ullam ducimus eum odio, molestiae reiciendis omnis!
+    Consequuntur ipsam minus eligendi placeat distinctio cumque quam excepturi quis, dicta provident harum temporibus iusto, quae animi. Magni qui, ab reiciendis corporis quisquam earum voluptates, saepe temporibus dignissimos velit similique!
+    Earum dolorem adipisci nobis explicabo consequatur assumenda! Placeat ut dolorum eius temporibus accusantium, veniam maxime, aliquid distinctio quod magnam beatae, fugit modi iure esse fugiat error iste eos magni corrupti.</p>
+  </div>
+</div>
+
+  <div class="d-flex">
+    <div class="bg-danger  w-25 warna-merah" onclick="fungsiKlik()">p</div>
+    <div class="bg-warning  w-75 " id="par" >p</div>
+  </div>
+
+  <img src="https://placekitten.com/300/300" alt="" id="kucing">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="index.js">
+    
+  </script>
+</body>
+</html>
